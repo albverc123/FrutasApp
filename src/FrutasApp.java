@@ -17,7 +17,7 @@ public class FrutasApp {
                     verFrutas(frutas);
                     break;
                 case 2:
-                    System.out.println("Función aún no implementada.");
+                    añadirFruta(frutas, sc);
                     break;
                 case 3:
                     System.out.println("Función aún no implementada.");
