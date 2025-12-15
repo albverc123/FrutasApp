@@ -73,7 +73,14 @@ public class FrutasApp {
     /* ---------- Funciones pendientes ---------- */
 
     public static void añadirFruta(ArrayList<String> frutas, Scanner sc) {
-        // Pendiente
+        System.out.print("Nombre de la fruta a añadir: ");
+        String nombre = sc.nextLine();
+        if (frutas.contains(nombre)) {
+            System.out.println("Esa fruta ya existe.");
+        } else {
+            frutas.add(nombre);
+            System.out.println("Fruta añadida.");
+        }
     }
 
     public static void borrarFruta(ArrayList<String> frutas, Scanner sc) {
