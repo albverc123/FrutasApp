@@ -20,7 +20,7 @@ public class FrutasApp {
                     añadirFruta(frutas, sc);
                     break;
                 case 3:
-                    System.out.println("Función aún no implementada.");
+                    borrarFruta(frutas, sc);
                     break;
                 case 4:
                     System.out.println("Función aún no implementada.");
@@ -84,7 +84,14 @@ public class FrutasApp {
     }
 
     public static void borrarFruta(ArrayList<String> frutas, Scanner sc) {
-        // Pendiente
+        System.out.print("Introduce el nombre de la fruta a borrar: ");
+        String fruta = sc.nextLine().trim();
+
+        if (frutas.remove(fruta)) {
+            System.out.println("Fruta eliminada.");
+        } else {
+            System.out.println("No se encontró esa fruta.");
+        }
     }
 
     public static void buscarFruta(ArrayList<String> frutas, Scanner sc) {
