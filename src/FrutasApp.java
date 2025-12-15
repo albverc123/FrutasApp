@@ -26,7 +26,7 @@ public class FrutasApp {
                     buscarFruta(frutas, sc);
                     break;
                 case 5:
-                    System.out.println("Función aún no implementada.");
+                    verCantidad(frutas);
                     break;
                 case 0:
                     System.out.println("Adiós.");
@@ -103,9 +103,7 @@ public class FrutasApp {
         }
     }
 
-    /* ---------- Funciones pendientes ---------- */
-
     public static void verCantidad(ArrayList<String> frutas) {
-        // Pendiente
+        System.out.println("Cantidad total de frutas: " + frutas.size());
     }
 }
