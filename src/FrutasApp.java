@@ -23,7 +23,7 @@ public class FrutasApp {
                     borrarFruta(frutas, sc);
                     break;
                 case 4:
-                    System.out.println("Función aún no implementada.");
+                    buscarFruta(frutas, sc);
                     break;
                 case 5:
                     System.out.println("Función aún no implementada.");
@@ -70,8 +70,6 @@ public class FrutasApp {
         }
     }
 
-    /* ---------- Funciones pendientes ---------- */
-
     public static void añadirFruta(ArrayList<String> frutas, Scanner sc) {
         System.out.print("Nombre de la fruta a añadir: ");
         String nombre = sc.nextLine();
@@ -95,8 +93,17 @@ public class FrutasApp {
     }
 
     public static void buscarFruta(ArrayList<String> frutas, Scanner sc) {
-        // Pendiente
+        System.out.print("Introduce el nombre de la fruta a buscar: ");
+        String fruta = sc.nextLine().trim();
+
+        if (frutas.contains(fruta)) {
+            System.out.println("Sí, la fruta está en la lista.");
+        } else {
+            System.out.println("No, la fruta NO está en la lista.");
+        }
     }
+
+    /* ---------- Funciones pendientes ---------- */
 
     public static void verCantidad(ArrayList<String> frutas) {
         // Pendiente
